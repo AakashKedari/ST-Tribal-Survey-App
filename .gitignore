@@ -42,3 +42,19 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+#Local Repos
+C:\BTECH Life\Flutter_projects\SurveryApp\android
+C:\BTECH Life\Flutter_projects\SurveryApp\build
+C:\BTECH Life\Flutter_projects\SurveryApp\.idea
+C:\BTECH Life\Flutter_projects\SurveryApp\.dart_tool
+C:\BTECH Life\Flutter_projects\SurveryApp\ios
+C:\BTECH Life\Flutter_projects\SurveryApp\linux
+C:\BTECH Life\Flutter_projects\SurveryApp\macos
+C:\BTECH Life\Flutter_projects\SurveryApp\web
+C:\BTECH Life\Flutter_projects\SurveryApp\windows
+
+
+
+
+
