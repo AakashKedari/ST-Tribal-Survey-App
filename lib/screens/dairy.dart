@@ -18,7 +18,7 @@ class _DairyState extends State<Dairy> {
   Widget build(BuildContext context) {
     return QFormat(
       keyvalue: 'Dairy',
-      givendetails: widget.givendetails,
+      givendetails: [],
       imagepath: carrotImage,
       qtitle: dairytitle,
       indexNo: 10,

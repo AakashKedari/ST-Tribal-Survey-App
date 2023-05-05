@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "613080916020",
+    "project_id": "st-survey-app",
+    "storage_bucket": "st-survey-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613080916020:android:1d47e05aae79a3b9c76a61",
+        "android_client_info": {
+          "package_name": "com.example.sample_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613080916020-cfqbjd2j2ebin5l6oan2cfhjqf8nk7be.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY4ZDLgH2-wAcFuSeqm78z4cQCDq-n8Ic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613080916020-cfqbjd2j2ebin5l6oan2cfhjqf8nk7be.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

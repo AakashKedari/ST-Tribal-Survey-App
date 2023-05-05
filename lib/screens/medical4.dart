@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_app/finalResponse.dart';
 import 'package:sample_app/screens/scheme.dart';
 
 import '../constants/devicesize.dart';
@@ -33,16 +34,19 @@ class _Medical4State extends State<Medical4> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 MedCard(
+                    keyvalue: 'दारू',
                     question: 'तुम्ही दारू पिता का?',
                     response1: 'होय',
                     response2: 'नाही',
                     response3: ''),
                 MedCard(
+                    keyvalue: 'धूम्रपान',
                     question: 'तुम्ही धूम्रपान करता का?',
                     response1: 'होय',
                     response2: 'नाही',
                     response3: ''),
                 MedCard(
+                    keyvalue: 'तंबाखू',
                     question: 'तुम्ही तंबाखूचे सेवन करता का?',
                     response1: 'होय',
                     response2: 'नाही',
@@ -56,10 +60,12 @@ class _Medical4State extends State<Medical4> {
               child: InkWell(
                   onTap: () {
                     setState(() {
+                      print(finalResponse);
+                      print(finalResponse['PersonalInfo'].length);
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const Scheme(),
+                            builder: (context) => Scheme(),
                           ));
                     });
                   },

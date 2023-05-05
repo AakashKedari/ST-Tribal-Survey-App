@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_app/finalResponse.dart';
 
 import '../constants/devicesize.dart';
 import '../customwidgets/medicalCard.dart';
@@ -36,12 +37,14 @@ class _Medical1State extends State<Medical1> {
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
                 MedCard(
+                    keyvalue: 'प्राथमिक आरोग्य',
                     question:
                         'तुम्ही प्राथमिक आरोग्य केंद्राला भेट दिली आहे का?',
                     response1: 'होय',
                     response2: 'नाही',
                     response3: 'माहित नाही'),
                 MedCard(
+                    keyvalue: 'रुग्णालयात २४ तास डॉक्टर',
                     question: 'रुग्णालयात २४ तास डॉक्टर उपलब्ध असतात  का?',
                     response1: 'होय',
                     response2: 'नाही',
@@ -55,6 +58,7 @@ class _Medical1State extends State<Medical1> {
               child: InkWell(
                   onTap: () {
                     setState(() {
+                      print(finalResponse);
                       Navigator.push(
                           context,
                           MaterialPageRoute(

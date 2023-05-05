@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_app/finalResponse.dart';
 import 'package:sample_app/screens/medical4.dart';
 
 import '../constants/devicesize.dart';
@@ -31,6 +32,7 @@ class _Medical3State extends State<Medical3> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             MedCard(
+                keyvalue: 'शौचालय',
                 question: 'तुम्हाला शौचालयाची सुविधा आहे का?',
                 response1: 'होय',
                 response2: 'नाही',
@@ -60,6 +62,7 @@ class _Medical3State extends State<Medical3> {
                       ]),
                 )),
             MedCard(
+                keyvalue: 'पिण्याचे पाणी',
                 question: 'तुम्हाला पिण्याचे पाणी उपलब्ध आहे का?',
                 response1: 'होय',
                 response2: 'नाही',
@@ -73,6 +76,7 @@ class _Medical3State extends State<Medical3> {
           child: InkWell(
               onTap: () {
                 setState(() {
+                  print(finalResponse);
                   Navigator.push(
                       context,
                       MaterialPageRoute(

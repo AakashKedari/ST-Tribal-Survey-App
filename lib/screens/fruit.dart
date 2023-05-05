@@ -18,7 +18,7 @@ class _FruitState extends State<Fruit> {
   Widget build(BuildContext context) {
     return QFormat(
       keyvalue: 'Fruits',
-      givendetails: widget.givendetails,
+      givendetails: [],
       imagepath: appleIMage,
       qtitle: frttitle,
       indexNo: 7,

@@ -4,7 +4,6 @@ import 'package:sample_app/screens/grain1.dart';
 import '../constants/devicesize.dart';
 import '../customwidgets/detailsTextField.dart';
 import 'package:sample_app/customwidgets/next_button.dart';
-
 import '../finalResponse.dart';
 
 class PersonalInfo extends StatefulWidget {
@@ -42,7 +41,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
           child: Scaffold(
             resizeToAvoidBottomInset: false,
             appBar: AppBar(
-              backgroundColor: Colors.red,
+              backgroundColor: Colors.lightBlue,
               elevation: 15,
               actions: [
                 PopupMenuButton(
@@ -65,7 +64,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                   },
                 ),
               ],
-              title: const Text("ST Survery App"),
+              title: const Text("Tribal Survey"),
               centerTitle: true,
             ),
             body: SingleChildScrollView(
@@ -83,35 +82,41 @@ class _PersonalInfoState extends State<PersonalInfo> {
                     const SizedBox(
                       height: 10,
                     ),
-                    SizedBox(
-                      height: devicesize(context).height,
-                      child: ListView(
-                        padding: const EdgeInsets.only(bottom: 400),
-                        children: [
-                          const Text(
-                            "कृपया तुमची माहिती भरा",
-                            style: TextStyle(
-                                fontSize: 25,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.redAccent),
-                            textAlign: TextAlign.center,
-                          ),
-                          newMethod("नाव", nameController),
-                          newMethod("आधार क्रमांक", aadharController),
-                          newMethod("फोन नंबर", phoneController),
-                          newMethod("वय", ageController),
-                          newMethod("लिंग", genderController),
-                          newMethod("शिक्षण", studyController),
-                          newMethod("जिल्हा", districtController),
-                          newMethod("तालुका", talukaController),
-                          newMethod(" गाव ", villageController),
-                        ],
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: devicesize(context).height,
+                        child: ListView(
+                          padding: const EdgeInsets.only(bottom: 400),
+                          children: [
+                            const Text(
+                              "कृपया तुमची माहिती भरा",
+                              style: TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.red),
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            newMethod("नाव", nameController),
+                            newMethod("आधार क्रमांक", aadharController),
+                            newMethod("फोन नंबर", phoneController),
+                            newMethod("वय", ageController),
+                            newMethod("लिंग", genderController),
+                            newMethod("शिक्षण", studyController),
+                            newMethod("जिल्हा", districtController),
+                            newMethod("तालुका", talukaController),
+                            newMethod(" गाव ", villageController),
+                          ],
+                        ),
                       ),
                     ),
                   ]),
                   Positioned(
                       right: 30,
-                      bottom: 120,
+                      bottom: 140,
                       child: InkWell(
                           onTap: () {
                             setState(() {
