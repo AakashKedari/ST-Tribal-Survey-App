@@ -58,7 +58,7 @@ class _Medical1State extends State<Medical1> {
               child: InkWell(
                   onTap: () {
                     setState(() {
-                      print(finalResponse);
+                      // print(finalResponse);
                       Navigator.push(
                           context,
                           MaterialPageRoute(

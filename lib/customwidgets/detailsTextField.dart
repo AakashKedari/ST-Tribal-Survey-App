@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-Padding newMethod(String labelText, TextEditingController passedcontroller) {
+Padding newMethod(
+  String labelText,
+  TextEditingController passedcontroller,
+) {
   return Padding(
     padding: const EdgeInsets.only(
       left: 16,
@@ -8,6 +11,7 @@ Padding newMethod(String labelText, TextEditingController passedcontroller) {
     ),
     child: TextField(
       style: const TextStyle(color: Colors.black),
+      keyboardType: TextInputType.text,
       controller: passedcontroller,
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(

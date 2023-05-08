@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sample_app/finalResponse.dart';
 import 'package:sample_app/screens/fina_screen.dart';
-import 'package:sample_app/screens/medical4.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../constants/devicesize.dart';
@@ -9,7 +8,7 @@ import '../customwidgets/next_button.dart';
 
 class Scheme extends StatelessWidget {
   CollectionReference surveyFeedbackCollection =
-      FirebaseFirestore.instance.collection('UserInfo');
+      FirebaseFirestore.instance.collection(finalResponse['PersonalInfo'][0]);
 
   @override
   Widget build(BuildContext context) {

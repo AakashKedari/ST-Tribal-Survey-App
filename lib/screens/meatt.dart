@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sample_app/questionformat.dart';
+import 'package:sample_app/customwidgets/questionformat.dart';
 import 'package:sample_app/screens/fish.dart';
 
 import '../constants/imagespath.dart';

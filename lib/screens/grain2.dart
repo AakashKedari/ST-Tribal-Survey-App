@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../constants/imagespath.dart';
 import '../constants/questiontitle.dart';
 
-import '../questionformat.dart';
+import '../customwidgets/questionformat.dart';
 import 'grain3.dart';
 
 class Grain2 extends StatefulWidget {

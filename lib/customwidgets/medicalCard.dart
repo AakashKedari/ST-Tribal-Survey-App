@@ -79,7 +79,7 @@ class _MedCardState extends State<MedCard> {
                                   padding: const EdgeInsets.all(6.0),
                                   child: Text(
                                     widget.response1,
-                                    style: const TextStyle(fontSize: 28),
+                                    style: const TextStyle(fontSize: 22),
                                   )),
                             )
                           : Container(
@@ -93,7 +93,7 @@ class _MedCardState extends State<MedCard> {
                                   padding: const EdgeInsets.all(6.0),
                                   child: Text(
                                     widget.response1,
-                                    style: const TextStyle(fontSize: 20),
+                                    style: const TextStyle(fontSize: 18),
                                   )),
                             )),
                   InkWell(
